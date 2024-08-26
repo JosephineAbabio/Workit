@@ -109,7 +109,6 @@ header {
   align-items: center;
   justify-content: center;
   gap:1rem;
-  /* margin-top: 5rem; */
   padding: 20px;
 
 }
@@ -152,17 +151,16 @@ header {
 
 }
 .hp {
-
   position: relative;
   display: flex;
   flex-direction: column;
   background-color: #24053e;
   gap: 1rem;
-  width: 730px;
-  height: 474.74px;
-  right: 14%;
-  top: 5rem;
+  width: 700px;
+   right:9%;
+  top: 6.5rem; 
   padding: 4rem;
+  gap:1px;
 
 }
 
@@ -195,8 +193,8 @@ header {
 }
 .hp-image {
   position: absolute;
-  left: 30rem;
-  top: 15rem;
+  left: 25rem;
+  top: 12rem;
 }
 
 .footer {
@@ -204,10 +202,9 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 2rem;
   color: #333;
   padding: 50px 0;
-
 }
 .footer-workit {
   margin-bottom: 15px;
@@ -221,6 +218,11 @@ header {
 .social-media i:hover {
   color: #28a745;
 }
+
+@media screen (){
+  
+}
+
 
 
 
