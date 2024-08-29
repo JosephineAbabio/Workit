@@ -9,27 +9,21 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   font-family: sans-serif;
 }
-
-main {
-  width: 100%;
-}
 .f-section {
-  /* font-family: Fraunces 144; */
+  font-family: Fraunces ;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #24053e;
-  height: 35rem;
+  height: 45rem;
   border-bottom-right-radius: 45% 9%;
   border-bottom-left-radius: 45% 9%;
   position: relative;
   gap: 4rem;
-  
 }
 header {
   width: 80%;
@@ -57,7 +51,7 @@ header {
 .span h1{
   font-size:4rem;
   color:white;
-   width:30rem;
+   width:35rem;
    text-align: center;
    font-weight: 900;
    font-family: "Fraunces";
@@ -66,6 +60,7 @@ header {
   border-bottom: solid #44FFA1;
 }
 .lower-button {
+  font-size: 2rem;
   border: none;
   background-color: #44FFA1;
   border: 2px solid #44FFA1;
@@ -75,8 +70,8 @@ header {
   text-align: center;
   color: #24053e;
   gap: 4rem;
+  margin-bottom:5px;
 }
-
 .lower-button:hover {
   background-color: inherit;
   color: #44FFA1;
@@ -88,9 +83,8 @@ header {
   top:18rem;
 }
 #image1{
-  top:7rem;
- }
- #image3{
+  top:10rem;
+  left:-2%;
  }
  .s-section {
   align-items: center;
@@ -110,7 +104,6 @@ header {
   justify-content: center;
   gap:1rem;
   padding: 20px;
-
 }
 .num {
   display: grid;
@@ -145,34 +138,36 @@ header {
   padding: auto;
 }
 .T-section {
+  margin-bottom:50px;
   align-items: center;
   justify-content: center;
   display: flex;
-
 }
 .hp {
   position: relative;
   display: flex;
   flex-direction: column;
   background-color: #24053e;
-  gap: 1rem;
-  width: 700px;
-   right:9%;
+  width: 730px;
+  height:474.74px;
+  right:9%;
   top: 6.5rem; 
   padding: 4rem;
-  gap:1px;
-
 }
-
 .hp h1 {
   color: white;
   justify-content: center;
   align-items: center;
   font-weight: bold;
+  margin-top:10px;
+  margin-bottom:30px;
 }
 .hp p {
   color: white;
-  line-height: 2rem;
+  line-height:2rem;
+  width:90%;
+  font-size:16px;
+  margin-bottom:20px;
 }
 .hp button {
   border: none;
@@ -184,7 +179,6 @@ header {
   padding: 1rem;
   width: 10rem;
   margin: 20px;
-
 }
 .hp button:hover {
   background-color: #24053e;
@@ -193,10 +187,9 @@ header {
 }
 .hp-image {
   position: absolute;
-  left: 25rem;
-  top: 12rem;
+  left:24rem;
+  top:20rem;
 }
-
 .footer {
   display: flex;
   flex-direction: column;
@@ -218,11 +211,209 @@ header {
 .social-media i:hover {
   color: #28a745;
 }
-
-@media screen (){
+.social-media i {
+  font-size: 1.5rem;
+  margin: 0 10px;
+}
+@media screen and (max-width: 1024px) and (min-width:768px){
   
+body {
+  overflow-x: hidden;
+}
+.span h1{
+  font-size:4rem;
+}
+#image3{
+ scale: 0.9;
+}
+.s-section {
+    width: 100%;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    padding:10px;
+}
+#image1{
+  position:absolute;
+  left:-9%;
+}
+#image2{
+  position: absolute;
+  left:93%;
+}
+.component {
+    margin-bottom: 10px;
+    gap:1rem;
+}
+.num{ 
+  position: absolute;
+  font-size:2rem;
+  left:8rem;
+  margin-bottom: 10px;
+}
+.component h2{
+  font-size:40px;
+}
+ .component p {
+  font-size:16.3px;
+  width: 32rem;
+ margin-left:10rem;
+ gap:5rem;
+ font-weight:850;
+}
+.T-section {
+  width: 100%;
+  height:500px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    margin-top:100px;
+}
+.hp{
+  position: relative;
+  top:-20px;
+   width:514px;
+  height:375px; 
+  left:145px;
+  margin-right: 50px;
+  padding: 30px; 
+} 
+.hp h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: left;
+}
+.hp p {
+  font-size:15px; 
+  text-align: left;
+  font-weight:bolder;
+  line-height:30px;
+}
+  .image-remove{
+    position: relative;
+    bottom:-40px;
+    width:265px;
+    height: 275px;
+ margin-left:-30rem;
+    scale: 0.6; 
+  }
+  .hp button{
+    font-size:15px;
+    font-weight:1000;
+    align-items:left;
+    font-family: fraunces;
+  }
+.hp-image{
+  position: absolute;
+  left:17rem;
+   top:17rem;
+}
+.footer {
+  flex-direction: column;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
+.footer-workit {
+  margin-bottom: 10px;
+}
+.social-media i {
+  font-size: 1.5rem;
+  margin:10px 10px;
+}
 }
 
+@media screen and (max-width:765px) and (min-width:320px){
+   body{
+    overflow-x: hidden;
+  }
+  .f-section{
+    padding:auto 0;
+    height:30rem;
+  }
+  .f-section header{
+    display:column;
+    text-align:space-between;
+    margin-bottom:10px;
+  }
+  #image1{
+    display: none;
+  }
+  #image2{
+    display:none;
+  }
+  .span h1{
+    font-size:2rem;
+    font-weight:990;
+    width:15rem;
+  }
+  .lower-button{
+    font-size:1rem;
+    width:8rem;
+  }
+  #image3{
+    width:100%;
+  }
+  .s-section{
+    display:flex;
+  flex-direction: column;
+  }
+  .component{
+    display:flex;
+    flex-direction: column;
+   padding: auto;
+  }
+  .component h2{
+    font-size:1.5rem;
+    text-align: center;
+  }
+  .component p{
+    font-size:15px;
+    font-weight:bolder;
+    text-align: center;
+  }
+  .T-section {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+}
+.image-remove{
+  scale:0.5;
+  margin-top:20px;
+}
+ .hp{
+  align-items: center;
+  margin-right:130px;
+  justify-content: center;
+ margin-top:-270px;
+ width:100%; 
+ right:-60px;
+}
+.hp h1{
+  font-size:20px;
+  margin-bottom:15px;
+}
+.hp p{
+ font-size:14px;
+}
+.hp button{
+  font-size:16px;
+  font-weight:790;
+}
+.hp-image{
+  display: none;
+}
+.footer{
+  flex-direction: column;
+  text-align: center;
+  padding: 15px;
+}
+.social-media i {
+  font-size: 1.5rem;
+  margin: 0 10px;
+}
+} 
 
 
 
@@ -236,3 +427,6 @@ header {
 
 
 
+
+
+ 
